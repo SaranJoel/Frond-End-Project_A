@@ -2,37 +2,37 @@
 /* this is to change the color in header_style to 
 accomdate it for about page*/
 header {
-  background: #212121;
-}
-
-#menu-toggle {
-  background: #212121;
-}
-
-#mobile-nav ul {
-  background: #212121;
-}
+    background: #212121;
+  }
   
+  #menu-toggle {
+    background: #212121;
+  }
   
-  @media (min-width:1025px) {
-    #desktop-nav,#header-desktop-btn{
+  #mobile-nav ul {
+    background: #212121;
+  }
+  
+  @media (min-width: 1025px) {
+    #desktop-nav,
+    #header-desktop-btn {
       display: block;
-  }
-    #menu-toggle{
-        display: none;
     }
-  nav ul{
-    display: flex;
-    font-size: 0.8vw;
-    text-transform: uppercase;
-    gap: 3vw;
-    font-weight: 600;
+    #menu-toggle {
+      display: none;
+    }
+    nav ul {
+      display: flex;
+      font-size: 0.8vw;
+      text-transform: uppercase;
+      gap: 3vw;
+      font-weight: 600;
+    }
+    nav ul li {
+      list-style-type: none;
+      cursor: pointer;
+    }
   }
-     nav ul li{
-        list-style-type: none;
-        cursor: pointer;
-  }
-}
 /* Main Content and Portfolio Section */
 main {
     /* padding:10vh 1rem; */

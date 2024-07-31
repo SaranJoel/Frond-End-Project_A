@@ -151,59 +151,51 @@ footer {
   }
 }
 
-/* pricing  */
-/* Pricing Table Styles */
+/* pricing  *//* Basic Styling */
 .pricing {
   text-align: center;
-  padding: 4em 0;
+  padding: 4em 1em; /* Smaller padding on mobile */
   background-color: #212121;
+  color: white;
 }
 
 .pricing h2 {
-  font-size: 3.5em;
-  line-height: 8vw;
-  font-weight: bold;
+  font-size: 2em; /* Adjustable for different screen sizes */
   color: #ffffff;
   margin-bottom: 1em;
 }
 
 .pricing-table {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
+  flex-direction: column; /* Stack items vertically on mobile */
+  align-items: center;
+  max-width: 1200px; /* Max width to control layout on larger screens */
+  margin: auto; /* Center align the pricing table */
 }
 
 .pricing-item {
-  background: #212121;
-  /*   background-color: white; */
-  color: white;
+  background: #333;
   border: 1px solid #0b8f45;
   border-radius: 8px;
   padding: 2em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  flex: 1 1 calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 90%; /* Fixed width for all items */
+  margin-bottom: 1em; /* Space between items on mobile */
 }
 
 .pricing-item h3 {
-  font-size: 1.2vw;
+  font-size: 1.5em;
   margin-bottom: 0.5em;
   color: #0b8f45;
 }
 
 .price {
   font-size: 2em;
-  color: white;
   margin-bottom: 1em;
 }
 
 .price span {
   font-size: 0.5em;
-  color: white;
 }
 
 .pricing-item ul {
@@ -211,7 +203,6 @@ footer {
   padding: 0;
   margin: 1em 0;
   text-align: left;
-  width: 100%;
 }
 
 .pricing-item ul li {
@@ -224,7 +215,6 @@ footer {
 }
 
 .cta {
-  display: inline-block;
   padding: 0.5em 1em;
   background-color: #007bff;
   color: white;
@@ -235,4 +225,38 @@ footer {
 
 .cta:hover {
   background-color: #0056b3;
+}
+
+/* Media Queries for Tablets and Larger Devices */
+@media (min-width: 720px) and (max-width: 1024px) {
+  .pricing h2 {
+      font-size: 3.5em; /* Larger font size for desktop */
+  }
+
+  .pricing-table {
+      flex-direction: row; /* Layout items side-by-side on larger screens */
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .pricing-item ,.service{
+      flex: 1 1 45%; /* Flex basis set to fixed width, flex-grow and flex-shrink to 1 */
+      margin: 1em; /* Uniform margin around items */
+  }
+}
+@media (min-width: 1024px) {
+  .pricing h2 {
+      font-size: 3.5em; /* Larger font size for desktop */
+  }
+
+  .pricing-table {
+      flex-direction: row; /* Layout items side-by-side on larger screens */
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .pricing-item ,.service{
+      flex: 1 1 22%; /* Flex basis set to fixed width, flex-grow and flex-shrink to 1 */
+      margin: 1em; /* Uniform margin around items */
+  }
 }

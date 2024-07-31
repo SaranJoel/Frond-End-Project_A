@@ -178,6 +178,9 @@
     text-align: center;
     margin: 15px 0;
 }
+.services p{
+  padding-bottom: 5vh !important;
+}
 
 .service:hover{
     box-shadow: 0 0 20px 0px  rgba(0,0,0,0.2);

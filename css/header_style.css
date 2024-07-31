@@ -45,6 +45,8 @@
 #mobile-nav ul{
     position: absolute;
     top: 10vh;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background: #08090A;
     left: 0%;
