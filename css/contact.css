@@ -1,4 +1,5 @@
 @import url("/css/header_style.css");
+@import url("/css/print.css");
 /* this is to change the color in header_style to 
 accomdate it for about page*/
 header {
